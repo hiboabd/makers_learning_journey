@@ -54,32 +54,5 @@ encode("theswiftfoxjumpedoverthelazydog", "secretkey")
 
 There were ___ steps I took to debug this:
 1. Firstly, the method was called and this showed an error message that nil cannot be coerced to a integer and that the error was on line 4
-2. This error occurred due to the
-
-#### Third debugging exercise
-
-```def decode(ciphertext, key)
-  cipher = key.chars.uniq + (('a'...'z').to_a - key.chars)
-  plaintext_chars = ciphertext.chars.map do |char|
-    cipher[char.ord - 65]
-  end
-  plaintext_chars.join
-end
-```
-
-#### Fourth debugging exercise - using the find the problem, learning oriented approach
-
-```def factorial(n)
-  product = 1
-  p "at the start product is #{product}"
-  while n > 0
-    p "we multiply #{product} by #{n}"
-    product *= n
-    p "we get #{product}"
-    n -= 1
-  end
-  product
-end
-
-factorial(5)
-```
+2. By printing cipher.find_index(char) on line 4 it showed that the result of this adding this to 65 raised the error as the plus method expects an integer but cipher.find_index(char) is not an integer
+3. To correct this, I added the method .to_i to convert it to an integer 

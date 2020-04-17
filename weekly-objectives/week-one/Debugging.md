@@ -52,7 +52,7 @@ end
 encode("theswiftfoxjumpedoverthelazydog", "secretkey")
 ```
 
-There were ___ steps I took to debug this:
+There were 3 steps I took to debug this:
 1. Firstly, the method was called and this showed an error message that nil cannot be coerced to a integer and that the error was on line 4
 2. By printing cipher.find_index(char) on line 4 it showed that the result of this adding this to 65 raised the error as the plus method expects an integer but cipher.find_index(char) is not an integer
-3. To correct this, I added the method .to_i to convert it to an integer 
+3. To correct this, I added the method .to_i to convert it to an integer

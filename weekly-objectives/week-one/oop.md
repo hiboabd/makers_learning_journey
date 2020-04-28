@@ -1,14 +1,21 @@
 ## Broader goal - week 1
 ### * Describe some basic OO principles like encapsulation, SRP *
 
-#### What is encapsulation?
+### What is object oriented programming?
+
+An object-oriented programming is a way programming which enables programmers to think like they are working with real-life entities(a thing with distinct and independent existence) or objects. In real-life, people have knowledge and can do various works. In OOP, objects have fields to store knowledge/state/data and can do various works — methods.
+
+
+#### What is encapsulation? (grouping objects and behaviours into a single class)
 
   1. Encapsulation is the principle of grouping objects and behaviours into a single unit, known as a class.
   2. This means that the internal representation of an object (i.e. its value and its behaviour) is hidden from view outside of where the object is defined (i.e. outside of the objects class).  
   3. In order to access the data of the attributes of a class and/or manipulate its value, getter and setter methods are required.
+  4. Encapsulation means hiding the details of the object and providing a decent interface for the entities in outer world to interact with that object or entity. For example, if someone want to know my name then he cannot directly access my brain cells to get to know what is my name. Instead that person will either ask my name. If a driver wants to speed up a vehicle then there is an interface(accelerator pedal, gear, etc) for that purpose.
 
 
 #### Example of encapsulation
+
 Example provided by: https://medium.com/the-renaissance-developer/ruby-101-object-oriented-programming-part-2-80b3eca2a318
 
 For this example below, a Person class is implemented and an instance of the class is initialized.
@@ -85,5 +92,9 @@ This will create the method written above for the name and age instance variable
   3. It is part of a group of guidelines (SOLID) that focus on making code changes as side effect free as possible (i.e. limiting the impact of change).
   4. But what does responsibility mean in this context? Responsibility is defined by Robert Martin as one reason to change.
   5. To follow this principle means to "Gather together the things that change for the same reasons. Separate those things that change for different reasons."  
+
+### Cohesion  
+
+Cohesion is related to this principle. A class has high cohesion when everything inside of it relates to that purpose, without anything extraneous. Perfection is achieved when there is nothing left to take away.
 
 #### Example of SRP

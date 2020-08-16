@@ -18,6 +18,13 @@ If the server is on another computer system to the client, it accesses that serv
 Examples of clients include:
   - A browser (i.e. Firefox, Chrome, Safari)
 
+#### What is HTTP?
+
+HTTP, stands for HyperText Transfer Protocol, defines the format for how documents can be served over the internet.
+A client makes a request to a server and gets back a response.
+It is called a "protocol" because it has a defined structure for requests and responses.
+
+
 ### How does this all work?
 
 A simplified diagram of how clients and serves work together can be found below. [Source](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
@@ -98,7 +105,6 @@ In client-server protocols, like HTTP, sessions consist of three phases:
   - TCP/IP: Transmission Control Protocol and Internet Protocol are communication protocols that define how data should travel across the web.
   - DNS: Domain Name Servers are like an address book for websites. When you type a web address in your browser, the browser looks at the DNS to find the website's real address before it can retrieve the website. The browser needs to find out which server the website lives on, so it can send HTTP messages to the right place.
   - Client-server protocol: A communications protocol that provides a structure for requests between client and server in a network
-  - HTTP: Hypertext Transfer Protocol is an application protocol that defines a language for clients and servers to speak to each other.
   - Component files: A website is made up of many different files, which are like the different parts of the goods you buy from the shop. These files come in two main types:
     - Code files: Websites are built primarily from HTML, CSS, and JavaScript.
     - Assets: This is a collective name for all the other stuff that makes up a website, such as images, music, video, Word documents, and PDFs.
